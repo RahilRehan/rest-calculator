@@ -1,7 +1,7 @@
 const express = require('express'),
     app = express(),
-    calculator = require('./app/calculator')
-    cors = require('cors')
+    calculator = require('./app/calculator'),
+    cors = require('cors');
 
 const PORT = process.env.PORT || 3000
 
