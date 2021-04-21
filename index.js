@@ -6,6 +6,11 @@ const express = require('express'),
 const PORT = 3000
 
 app.use(cors())
+
+app.get('/', (req, res) => {
+    res.json({message: "Welcome to our rest calculator api!!"})
+})
+
 app.use(router)
 
 

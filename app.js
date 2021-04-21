@@ -1,8 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    res.json({message: "Welcome to our rest calculator api!!"})
+router.get('/calculator/add/:operandOne/:operandTwo', (req, res) => {
+    const [operandOne, operandTwo] = Object.keys(req.params).map((key) => Number(req.params[key]))
+    res.json({answer:operandOne + operandTwo})
 })
 
 module.exports = router;
