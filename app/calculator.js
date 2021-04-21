@@ -13,11 +13,14 @@ router.get('/add/:operandOne/:operandTwo', (req, res) => {
     res.json({answer:operandOne + operandTwo})
 })
 
-router.get('/multiply/:operandOne/:operandTwo', (req, res) => {
-    console.log(process.env.DISABLE_MULTIPLY);
-    logger(req)
-    const [operandOne, operandTwo] = getOperands(req.params)
-    res.json({answer:operandOne * operandTwo})
+router.get('/multiply/:operandOne/:operandTwo', (req, res, next) => {
+    if(process.env.DISABLE_MULTIPLY === 'true'){
+        logger(req)
+        const [operandOne, operandTwo] = getOperands(req.params)
+        res.json({answer:operandOne * operandTwo})
+    }else{
+        next()
+    }
 })
 
 module.exports = router;
