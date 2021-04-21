@@ -1,6 +1,6 @@
 const express = require('express'),
     app = express(),
-    calculator = require('./calculator')
+    calculator = require('./app/calculator')
     cors = require('cors')
 
 const PORT = 3000
