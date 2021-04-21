@@ -8,7 +8,6 @@ describe('testing get routes', () =>{
         expect(response.headers['content-type']).toEqual('application/json; charset=utf-8')
     })
 
-
     test('shouldReturnValidAdditionForTwoNumbers', async () => {
         const response = await axios('http://localhost:3000/calculator/add/6/7')
         expect(response.status).toEqual(200)
