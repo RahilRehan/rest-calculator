@@ -2,10 +2,12 @@ const express = require('express'),
     app = express(),
     calculator = require('./calculator')
     cors = require('cors')
+    morgan = require('morgan')
 
 const PORT = 3000
 
 app.use(cors())
+app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
     res.json({message: "Welcome to our rest calculator api!!"})
