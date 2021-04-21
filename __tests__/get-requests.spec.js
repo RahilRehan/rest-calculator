@@ -1,5 +1,4 @@
 const axios = require('axios')
-const app = require('../app/calculator')
 
 describe('testing get routes', () =>{
     test('shouldReturnJsonForRootRoute', async () => {

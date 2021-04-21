@@ -13,6 +13,7 @@ app.use(logger)
 app.get('/', (req, res) => {
     res.json({message: "Welcome to our rest calculator api!!"})
 })
+
 app.use('/calculator', calculator)
 
 
