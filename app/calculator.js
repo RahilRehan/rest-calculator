@@ -23,4 +23,10 @@ router.get('/multiply/:operandOne/:operandTwo', (req, res, next) => {
     }
 })
 
+router.get('/divide/:operandOne/:operandTwo', (req, res) => {
+    logger(req)
+    const [operandOne, operandTwo] = getOperands(req.params)
+    res.json({answer:operandOne / operandTwo})
+})
+
 module.exports = router;
