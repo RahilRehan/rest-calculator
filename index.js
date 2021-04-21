@@ -1,6 +1,6 @@
 const express = require('express'),
     app = express(),
-    router = require('./app')
+    calculator = require('./calculator')
     cors = require('cors')
 
 const PORT = 3000
@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
     res.json({message: "Welcome to our rest calculator api!!"})
 })
 
-app.use(router)
+app.use('/calculator', calculator)
 
 
 app.listen(PORT, () => {
