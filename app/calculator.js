@@ -1,6 +1,6 @@
-const express = require('express')
-const router = express.Router()
-const logger = require('../utils/logger')
+const express = require('express'),
+    router = express.Router();
+
 require('dotenv').config()
 
 const getOperands = (params) => {
@@ -8,14 +8,12 @@ const getOperands = (params) => {
 }
 
 router.get('/add/:operandOne/:operandTwo', (req, res) => {
-    logger(req)
     const [operandOne, operandTwo] = getOperands(req.params)
     res.json({answer:operandOne + operandTwo})
 })
 
 router.get('/multiply/:operandOne/:operandTwo', (req, res, next) => {
     if(process.env.DISABLE_MULTIPLY === 'true'){
-        logger(req)
         const [operandOne, operandTwo] = getOperands(req.params)
         res.json({answer:operandOne * operandTwo})
     }else{
@@ -24,7 +22,6 @@ router.get('/multiply/:operandOne/:operandTwo', (req, res, next) => {
 })
 
 router.get('/divide/:operandOne/:operandTwo', (req, res) => {
-    logger(req)
     const [operandOne, operandTwo] = getOperands(req.params)
     res.json({answer:operandOne / operandTwo})
 })
