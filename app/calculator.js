@@ -1,5 +1,5 @@
 const express = require('express'),
-    router = express.Router();
+    router = express.Router()
 
 require('dotenv').config()
 
@@ -31,4 +31,4 @@ router.get('/divide', (req, res) => {
     res.json(isNaN(answer) ? queryError:{answer:answer})
 })
 
-module.exports = router;
+module.exports = router
