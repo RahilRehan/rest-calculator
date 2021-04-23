@@ -5,7 +5,7 @@ const parseIp = (req) => req.headers['x-forwarded-for']?.split(',').shift() || r
 
 const logger = async (req, res, next) => {
     try {
-        const log = `URL:${req.originalUrl}  METHOD:${req.method}  OPERANDS:${req.query.a + ' and ' + req.query.b}\n`
+        const log = `IP:${parseIp(req)} URL:${req.originalUrl}  METHOD:${req.method}  OPERANDS:${req.query.a + ' and ' + req.query.b}\n`
         await fs.appendFile('logs/logs.txt', log)
     } catch (error) {
         console.error(`Got an error trying to write to a file: ${error.message}`);

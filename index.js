@@ -4,8 +4,7 @@ const express = require('express'),
     calculator = require('./app/calculator'),
     errorHandler = require('./app/errorHandler'),
     cors = require('cors'),
-    logger = require('./middlewares/http-logger'),
-    {transport, message} = require('./utils/mailer')
+    logger = require('./middlewares/http-logger')
 
 const PORT = process.env.PORT || 3000
 
