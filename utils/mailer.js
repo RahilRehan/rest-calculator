@@ -7,7 +7,7 @@ const sendEmail =() => {
         const msg = {
             from: 'elonmusk@tesla.com',
             to: 'rahilrehan@test.com',
-            subject: 'Logs for rest calculator api, final2',
+            subject: 'Logs for rest calculator api',
             text: data
         }
         let transport = nodemailer.createTransport({
