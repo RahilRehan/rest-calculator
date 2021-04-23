@@ -16,7 +16,7 @@ router.get('/add', (req, res) => {
 })
 
 router.get('/multiply', (req, res, next) => {
-    if(process.env.DISABLE_MULTIPLY === 'true'){
+    if(Number(process.env.DISABLE_MULTIPLY)){
         const [operandOne, operandTwo] = getOperands(req.query)
         const answer = operandOne * operandTwo
         res.json(isNaN(answer) ? queryError:{answer:answer})
