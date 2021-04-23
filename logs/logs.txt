@@ -1,0 +1,17 @@
+IP:::1 URL:/calculator/multiply?a=12&b=98  METHOD:GET  OPERANDS:12 and 98
+IP:::1 URL:/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/add?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/add?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/add?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/multiply?a=12&b=98  METHOD:GET  OPERANDS:12 and 98
+IP:::1 URL:/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/add?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/add?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/divide?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+IP:::1 URL:/calculator/add?a=3&b=5  METHOD:GET  OPERANDS:3 and 5
+
