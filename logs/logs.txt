@@ -46,3 +46,19 @@ IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
 IP:::1 URL:/calculator/divide?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
 IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
 IP:::1 URL:/calcul  METHOD:GET  OPERANDS:undefined and undefined
+IP:::1 URL:/calculator/add?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/add?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/add?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/add?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=12  METHOD:GET  OPERANDS:10 and 12
+IP:::1 URL:/calculator/multiply?a=10&b=  METHOD:GET  OPERANDS:10 and 
+IP:::1 URL:/calculator/multiply?a=10&b=  METHOD:GET  OPERANDS:10 and 
+IP:::1 URL:/calculator/multiply?a=10  METHOD:GET  OPERANDS:10 and undefined
+IP:::1 URL:/calculator/multiply?a=10&b=20  METHOD:GET  OPERANDS:10 and 20
+IP:::1 URL:/calculator/multiply?a=10  METHOD:GET  OPERANDS:10 and undefined
+IP:::1 URL:/calculator/multiply?a=10&b=20  METHOD:GET  OPERANDS:10 and 20
