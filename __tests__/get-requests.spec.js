@@ -28,12 +28,6 @@ describe('testing get routes', () =>{
         expect(response.data.answer).toEqual(5)
     })
 
-    test('shouldReturnErrorResponseForMalformedQuery', async () => {
-        const response = await axios('http://localhost:3000/calculator/divide/?a=1')
-        expect(response.status).toEqual(200)
-        expect(response.headers['content-type']).toEqual('application/json; charset=utf-8')
-        expect(response.data).toEqual({error:'malformed query', 'query format': '/calculator/operation?a=operandOne&b=operandTwo'})
-    })
 })
 
 //tests for middleware
