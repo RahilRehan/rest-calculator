@@ -1,34 +1,34 @@
 const express = require('express'),
     router = express.Router()
 
+const add = require('../calculator/add'),
+    multiply = require('../calculator/multiply'),
+    divide = require('../calculator/divide')
+
 require('dotenv').config()
 
 const queryError = {error:'malformed query', 'query format': '/calculator/operation?a=operandOne&b=operandTwo'}
 
-const getOperands = (params) => {
-    return Object.keys(params).map((key) => Number(params[key]))
-}
-
 router.get('/add', (req, res) => {
-    const [operandOne, operandTwo] = getOperands(req.query)
-    const answer = operandOne + operandTwo
+    const answer = add(req.query)
     res.json(isNaN(answer) ? queryError:{answer:answer})
 })
 
 router.get('/multiply', (req, res, next) => {
-    if(Number(process.env.DISABLE_MULTIPLY)){
-        const [operandOne, operandTwo] = getOperands(req.query)
-        const answer = operandOne * operandTwo
+    if(Number(process.env.ENABLE_MULTIPLY)){
+        const answer = multiply(req.query)
         res.json(isNaN(answer) ? queryError:{answer:answer})
     }else{
         next()
     }
 })
 
+
 router.get('/divide', (req, res) => {
-    const [operandOne, operandTwo] = getOperands(req.query)
-    const answer = operandOne / operandTwo
+    const answer = divide(req.query)
     res.json(isNaN(answer) ? queryError:{answer:answer})
 })
+
+
 
 module.exports = router

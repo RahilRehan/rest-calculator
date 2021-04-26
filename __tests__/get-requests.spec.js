@@ -36,3 +36,5 @@ describe('testing get routes', () =>{
     })
 })
 
+//tests for middleware
+//tests for logging
