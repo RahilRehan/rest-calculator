@@ -7,7 +7,7 @@ const rootLogger = (req, next) => {
 
 const incorrectParamLogger = (req, res, next) => {
     console.log(`HIT:ERROR URL:${req.originalUrl}  METHOD:${req.method} Error: Not Enough parameters`)
-    error(req, res, next, 'Pass correct parameters')
+    error(req, res, next, 'Malformed URL')
     return
 }
 
