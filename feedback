@@ -1,0 +1,11 @@
+//logger should not take req, res -> just take msg, so it shouldn't be middleware
+//logging inside the middleware
+//find libraries for logging instead of console.log (winston logger -> library (nodejs))
+//levels in logging -> winston
+//remove redundancy in logger
+//winton logger -> best practices
+//test middlewares and loggers, just test them as methods
+//each and every file must be tested until those are private
+//think in terms of console.log and what it accepts
+//structured logging, json logging -> winston, kibana, apache kafka(take decision based on logs) can take advantage of structured logging
+//best practices in structured logging
