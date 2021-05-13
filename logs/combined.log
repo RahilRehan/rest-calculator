@@ -1,0 +1,2 @@
+{"message":"HIT:ERROR URL:/calcula  METHOD:GET Error: Malformed URL","level":"error"}
+{"message":"HIT:ADD URL:/calculator/add?a=45&b=34  METHOD:GET  OPERANDS:45 and 34,","level":"info"}
